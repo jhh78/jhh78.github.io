@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>앱 지원 사이트</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="support.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>앱 지원</h1>
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#contact-info"
+            >버그보고 및 앱에 대한 건의</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">자주 묻는 질문(FAQ)</a>
+        </li>
+      </ul>
+
+      <div id="contact-info" class="tab-content active">
+        <h2>버그보고 및 앱에 대한 건의</h2>
+        <ul>
+          <li>앱이 갑자기 종료되는 경우</li>
+          <li>로그인 문제가 발생하는 경우</li>
+          <li>기능이 제대로 작동하지 않는 경우</li>
+          <li>UI/UX 관련 개선 사항이 있는 경우</li>
+        </ul>
+        <p>
+          위와 같은 문제가 발생할 경우, 구글 플레이 스토어 또는 앱스토어의 리뷰
+          게시판에 작성해 주시기 바랍니다.
+        </p>
+      </div>
+
+      <div id="faq" class="tab-content">
+        <h2>자주 묻는 질문(FAQ)</h2>
+        <div class="faq-item">
+          <h4>Q1: 앱을 설치하는 방법은?</h4>
+          <p>
+            A1: 구글 플레이 스토어 및 앱 스토어에서 앱을 검색한 후 설치 버튼을
+            누르십시오.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Q2: 회원탈퇴 방법은?</h4>
+          <p>A2: 회원탈퇴를 하려면, 다음 단계를 따르십시오:</p>
+          <ul>
+            <li>앱을 삭제하면 회원탈퇴가 됩니다.</li>
+            <li>앱 안에 마련된 회원탈퇴 기능을 통해 탈퇴가 가능합니다.</li>
+          </ul>
+        </div>
+        <div class="faq-item">
+          <h4>Q3: 앱을 삭제하는 방법은?</h4>
+          <p>A3: 앱을 삭제하려면, 다음 단계를 따르십시오:</p>
+          <h5>안드로이드:</h5>
+          <ul>
+            <li>설정 메뉴에서 '앱' 또는 '애플리케이션 관리'를 선택합니다.</li>
+            <li>삭제하려는 앱을 선택합니다.</li>
+            <li>'삭제' 버튼을 누릅니다.</li>
+          </ul>
+          <h5>아이폰:</h5>
+          <ul>
+            <li>홈 화면에서 삭제하려는 앱을 길게 누릅니다.</li>
+            <li>
+              앱 아이콘이 흔들리면, 앱 아이콘의 'X' 또는 '-' 버튼을 누릅니다.
+            </li>
+            <li>'삭제'를 선택하여 앱을 삭제합니다.</li>
+          </ul>
+        </div>
+        <!-- 추가 FAQ 항목을 여기에 추가할 수 있습니다 -->
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".nav-link").click(function (event) {
+          event.preventDefault();
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+          $(".tab-content").removeClass("active");
+          $($(this).attr("href")).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

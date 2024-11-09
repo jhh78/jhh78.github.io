@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>アプリサポートサイト</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="support.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>アプリサポート</h1>
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#contact-info"
+            >バグ報告およびアプリに関する提案</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">よくある質問(FAQ)</a>
+        </li>
+      </ul>
+
+      <div id="contact-info" class="tab-content active">
+        <h2>バグ報告およびアプリに関する提案</h2>
+        <ul>
+          <li>アプリが突然終了する場合</li>
+          <li>ログイン問題が発生する場合</li>
+          <li>機能が正常に動作しない場合</li>
+          <li>UI/UXに関する改善点がある場合</li>
+        </ul>
+        <p>
+          上記のような問題が発生した場合、Google PlayストアまたはApp
+          Storeのレビュー掲示板にご記入ください。
+        </p>
+      </div>
+
+      <div id="faq" class="tab-content">
+        <h2>よくある質問(FAQ)</h2>
+        <div class="faq-item">
+          <h4>Q1: アプリをインストールする方法は？</h4>
+          <p>
+            A1: Google PlayストアおよびApp
+            Storeでアプリを検索し、インストールボタンを押してください。
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Q2: 退会方法は？</h4>
+          <p>A2: 退会するには、次の手順に従ってください:</p>
+          <ul>
+            <li>アプリを削除すると退会できます。</li>
+            <li>アプリ内に用意された退会機能を通じて退会できます。</li>
+          </ul>
+        </div>
+        <div class="faq-item">
+          <h4>Q3: アプリを削除する方法は？</h4>
+          <p>A3: アプリを削除するには、次の手順に従ってください:</p>
+          <h5>Android:</h5>
+          <ul>
+            <li>
+              設定メニューで「アプリ」または「アプリケーション管理」を選択します。
+            </li>
+            <li>削除するアプリを選択します。</li>
+            <li>「削除」ボタンを押します。</li>
+          </ul>
+          <h5>iPhone:</h5>
+          <ul>
+            <li>ホーム画面で削除するアプリを長押しします。</li>
+            <li>
+              アプリアイコンが揺れたら、アプリアイコンの「X」または「-」ボタンを押します。
+            </li>
+            <li>「削除」を選択してアプリを削除します。</li>
+          </ul>
+        </div>
+        <!-- 追加のFAQ項目はここに追加できます -->
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".nav-link").click(function (event) {
+          event.preventDefault();
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+          $(".tab-content").removeClass("active");
+          $($(this).attr("href")).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

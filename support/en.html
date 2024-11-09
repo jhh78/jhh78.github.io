@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Support Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="support.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>App Support</h1>
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#contact-info"
+            >Bug Reports and App Suggestions</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">Frequently Asked Questions (FAQ)</a>
+        </li>
+      </ul>
+
+      <div id="contact-info" class="tab-content active">
+        <h2>Bug Reports and App Suggestions</h2>
+        <ul>
+          <li>If the app suddenly closes</li>
+          <li>If login issues occur</li>
+          <li>If functions do not work properly</li>
+          <li>If there are suggestions for UI/UX improvements</li>
+        </ul>
+        <p>
+          If such issues occur, please write on the review board of Google Play
+          Store or App Store.
+        </p>
+      </div>
+
+      <div id="faq" class="tab-content">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-item">
+          <h4>Q1: How to install the app?</h4>
+          <p>
+            A1: Search for the app on Google Play Store or App Store and press
+            the install button.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Q2: How to withdraw membership?</h4>
+          <p>A2: To withdraw membership, follow these steps:</p>
+          <ul>
+            <li>Deleting the app will withdraw your membership.</li>
+            <li>
+              You can withdraw through the withdrawal function provided in the
+              app.
+            </li>
+          </ul>
+        </div>
+        <div class="faq-item">
+          <h4>Q3: How to delete the app?</h4>
+          <p>A3: To delete the app, follow these steps:</p>
+          <h5>Android:</h5>
+          <ul>
+            <li>
+              Select 'Apps' or 'Application Management' from the settings menu.
+            </li>
+            <li>Select the app you want to delete.</li>
+            <li>Press the 'Delete' button.</li>
+          </ul>
+          <h5>iPhone:</h5>
+          <ul>
+            <li>Long press the app you want to delete on the home screen.</li>
+            <li>
+              When the app icon shakes, press the 'X' or '-' button on the app
+              icon.
+            </li>
+            <li>Select 'Delete' to delete the app.</li>
+          </ul>
+        </div>
+        <!-- Additional FAQ items can be added here -->
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".nav-link").click(function (event) {
+          event.preventDefault();
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+          $(".tab-content").removeClass("active");
+          $($(this).attr("href")).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

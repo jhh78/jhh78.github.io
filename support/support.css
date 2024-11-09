@@ -1,31 +1,43 @@
 body {
     padding-top: 20px;
     background-color: #e0f7fa; /* 블루톤 배경색 */
-    line-height: 1.6; /* 줄 간격을 넓힘 */
-}
-h1, h2, h4 {
+  }
+  .nav-tabs .nav-link.active {
+    background-color: #0288d1; /* 블루톤 활성 탭 색상 */
+    color: #fff;
+  }
+  .nav-tabs .nav-link {
+    color: #555;
+  }
+  .tab-content {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  h1,
+  h2,
+  h4 {
     color: #0277bd; /* 블루톤 텍스트 색상 */
-    line-height: 1.4; /* 줄 간격을 넓힘 */
-}
-.btn-primary {
+  }
+  .btn-primary {
     background-color: #0288d1; /* 블루톤 버튼 색상 */
     border-color: #0288d1;
-}
-.btn-primary:hover {
+  }
+  .btn-primary:hover {
     background-color: #0277bd; /* 블루톤 버튼 호버 색상 */
     border-color: #0277bd;
-}
-.container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.highlight {
+  }
+  .highlight {
     background-color: #b3e5fc; /* 블루톤 하이라이트 배경색 */
     padding: 5px 10px; /* 상하 여백을 줄이고 좌우 여백을 유지 */
     border-radius: 5px;
-    line-height: 1.6; /* 줄 간격을 넓힘 */
-    margin: 5px 0; /* 상하 여백 추가 */
     color: #ff4081; /* 보색 텍스트 색상 */
-}
+  }
