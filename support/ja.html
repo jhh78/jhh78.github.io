@@ -26,6 +26,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#faq">よくある質問(FAQ)</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#inquiry-form">お問い合わせ</a>
+        </li>
       </ul>
 
       <div id="contact-info" class="tab-content active">
@@ -36,10 +39,11 @@
           <li>機能が正常に動作しない場合</li>
           <li>UI/UXに関する改善点がある場合</li>
         </ul>
-        <p>
-          上記のような問題が発生した場合、Google PlayストアまたはApp
-          Storeのレビュー掲示板にご記入ください。
-        </p>
+        <h2>上記のような問題が発生した場合、次の方法でお知らせください</h2>
+        <ul>
+          <li>Google PlayストアまたはApp Storeのレビュー</li>
+          <li><a href="mailto:vkcel800@gmail.com">お問い合わせ</a></li>
+        </ul>
       </div>
 
       <div id="faq" class="tab-content">
@@ -80,6 +84,49 @@
           </ul>
         </div>
         <!-- 追加のFAQ項目はここに追加できます -->
+      </div>
+
+      <div id="inquiry-form" class="tab-content">
+        <h2>お問い合わせ</h2>
+        <form action="/submit-inquiry" method="post">
+          <div class="mb-3">
+            <label for="inquiry-type" class="form-label"
+              >問い合わせの種類</label
+            >
+            <select
+              class="form-select"
+              id="inquiry-type"
+              name="inquiry-type"
+              required
+            >
+              <option value="">選択してください</option>
+              <option value="bug-report">バグ報告</option>
+              <option value="feature-request">機能リクエスト</option>
+              <option value="general-inquiry">一般的な問い合わせ</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">メールアドレス</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">問い合わせ内容</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">送信</button>
+        </form>
       </div>
     </div>
 
