@@ -3,6 +3,7 @@ body {
     background-color: #e0f7fa; /* 블루톤 배경색 */
     line-height: 1.6; /* 줄 간격을 넓힘 */
 }
+
 h1, h2, h4 {
     color: #0277bd; /* 블루톤 텍스트 색상 */
     line-height: 1.4; /* 줄 간격을 넓힘 */
@@ -28,4 +29,29 @@ h1, h2, h4 {
     line-height: 1.6; /* 줄 간격을 넓힘 */
     margin: 5px 0; /* 상하 여백 추가 */
     color: #ff4081; /* 보색 텍스트 색상 */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 0; /* 모바일에서 상단 패딩 제거 */
+        margin-top: 0;
+        background-color: #ffffff; /* 모바일에서 배경색 변경 */
+        font-size: 14px; /* 모바일에서 글자 크기 조절 */
+    }
+    .container {
+        background-color: #f0f0f0; /* 모바일에서 컨테이너 배경색 변경 */
+    }
+    .highlight {
+        background-color: #f0f0f0; /* 모바일에서 하이라이트 배경색 변경 */
+        color: #284adf; /* 모바일에서 텍스트 색상 변경 */
+    }
+    h1 {
+        font-size: 24px; /* 모바일에서 h1 글자 크기 조절 */
+    }
+    h2 {
+        font-size: 20px; /* 모바일에서 h2 글자 크기 조절 */
+    }
+    h4 {
+        font-size: 16px; /* 모바일에서 h4 글자 크기 조절 */
+    }
 }
