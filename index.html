@@ -4,30 +4,42 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
-		<link href="./_app/immutable/entry/start.CDwBRCUU.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/KW13uvn_.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/D4e98BXp.js" rel="modulepreload">
-		<link href="./_app/immutable/entry/app.CIWYMJBb.js" rel="modulepreload">
+		<meta name="color-scheme" content="light dark" />
+		<script>
+			(function () {
+				try {
+					var theme = localStorage.getItem('erd-theme');
+					if (theme === 'light' || theme === 'dark') {
+						document.documentElement.setAttribute('data-theme', theme);
+					}
+				} catch (error) {}
+			})();
+		</script>
+		<link href="./_app/immutable/entry/start.DuOy-I9o.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BH7_qlSd.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DTPpl41A.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.CSXCPJmk.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/0.DSkqcVRq.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/2.D9bDr4OZ.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.ClgU5QGP.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CAKnWKXS.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.BVSFy8Wd.js" rel="modulepreload">
 		
-		<link href="./_app/immutable/assets/0.JoV3iUq8.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2.Be3FnGFt.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.Da_HPbfx.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.BD6obN-K.css" rel="stylesheet">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_vxs4uo = {
+					__sveltekit_1llq7gb = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.CDwBRCUU.js"),
-						import("./_app/immutable/entry/app.CIWYMJBb.js")
+						import("./_app/immutable/entry/start.DuOy-I9o.js"),
+						import("./_app/immutable/entry/app.CSXCPJmk.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
